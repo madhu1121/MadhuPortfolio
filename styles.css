@@ -1,0 +1,284 @@
+.mainPage {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./Images/Black_Teal_uniform.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mainPage__nav {
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainPage__nav__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.mainPage__nav__links ul {
+  display: flex;
+  text-align: right;
+  flex-direction: row;
+}
+.mainPage__nav__links ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 8px 12px;
+}
+.mainPage__nav__links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #08f1de;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.mainPage__nav__links ul li :hover::after {
+  width: 100%;
+}
+.mainPage__nav__links ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.mainPage__content {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 25%;
+}
+.mainPage__content h1 {
+  font-size: 60px;
+}
+.mainPage__content h4 {
+  font-size: 30px;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .mainPage__nav__links {
+    position: absolute;
+    background-color: #04b3b3;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    height: 100vh;
+    width: 200px;
+  }
+  .mainPage__nav__links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+}
+.projectPage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #03353d;
+}
+.projectPage h4 {
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+  color: #18615b;
+  font-style: italic;
+}
+.projectPage p {
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+}
+.projectPage__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  transition: 0.5s;
+}
+.projectPage__main__sub {
+  background-color: #18615b;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 10px;
+}
+.projectPage__main__sub:hover {
+  box-shadow: 0 0 20px 0px #007180;
+}
+.projectPage__main__sub h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+}
+.projectPage__main__sub a {
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 8px;
+  left: 150px;
+}
+
+@media screen and (max-width: 550px) {
+  .projectPage__main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.galleryPage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  color: #03353d;
+}
+.galleryPage h4 {
+  font-weight: bold;
+  font-size: medium;
+  padding: 2px;
+  text-align: center;
+  color: #18615b;
+  font-style: italic;
+}
+.galleryPage__allImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.galleryPage__allImages__image {
+  transition: 0.2s;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  gap: 5px;
+  margin: 10px;
+  padding: 10px;
+  border: 4px solid #17a397;
+}
+.galleryPage__allImages__image img {
+  width: 250px;
+  height: 250px;
+}
+.galleryPage__allImages__image:hover {
+  transform: scale(2);
+}
+
+@media screen and (max-width: 550px) {
+  .galleryPage__allImages {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .galleryPage__allImages__image:hover {
+    transform: none;
+  }
+}
+.skillsPage {
+  background-image: linear-gradient(to bottom right, #0beedb, #0f635e);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.skillsPage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+.skillsPage h4 {
+  font-weight: bold;
+  font-size: medium;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.skillsPage .allSkills {
+  text-align: center;
+}
+.skillsPage .allSkills ul {
+  list-style-type: none;
+  color: white;
+}
+
+.contactMePage {
+  background-image: linear-gradient(to bottom right, #0beedb, #0f635e);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.contactMePage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+.contactMePage h4 {
+  font-weight: bold;
+  font-size: medium;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.contactMePage__class {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contactMePage__class__contactForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+.contactMePage__class__contactForm label {
+  color: white;
+  font-weight: bold;
+}
+.contactMePage__class__contactForm button {
+  font-weight: bold;
+  color: #054d47;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm input {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm textarea {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm__submit {
+  font-weight: bold;
+  color: #054d47;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: italic;
+}

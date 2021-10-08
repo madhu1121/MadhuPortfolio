@@ -1,0 +1,72 @@
+.contactMePage{
+    background-image: linear-gradient(to bottom right, rgb(11, 238, 219), rgb(15, 99, 94));
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding: 2px;
+        text-align: center;
+        color: white;
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: medium;
+        padding: 2px;
+        text-align: center;
+        color: white;
+        font-style: italic;
+    }
+
+    &__class{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        &__contactForm{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 10px;
+            
+            label{
+                color: white;
+                font-weight: bold;
+            }
+
+            button{
+                font-weight: bold;
+                color:  rgb(5, 77, 71);
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+
+            input{
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+
+            textarea{
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+
+            &__submit{
+                font-weight: bold;
+                color: rgb(5, 77, 71);
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+        }
+    }
+
+}
+
+.footer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+}

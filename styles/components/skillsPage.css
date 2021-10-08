@@ -1,0 +1,28 @@
+.skillsPage {
+  background-image: linear-gradient(to bottom right, #0beedb, #0f635e);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.skillsPage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+.skillsPage h4 {
+  font-weight: bold;
+  font-size: medium;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.skillsPage .allSkills {
+  text-align: center;
+}
+.skillsPage .allSkills ul {
+  list-style-type: none;
+  color: white;
+}

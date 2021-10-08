@@ -1,0 +1,70 @@
+.projectPage {
+
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(3, 53, 61);
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+        color: #18615b;
+        font-style: italic;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+        justify-content: center;
+        transition: 0.5s;
+
+        &__sub {
+            background-color: #18615b;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 10px;
+
+            &:hover {
+                box-shadow: 0 0 20px 0px rgb(0, 113, 128);
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 600;
+                margin: 10px;
+            }
+
+            a {
+                color: white;
+                text-align: center;
+                position: relative;
+                bottom: 8px;
+                left:150px;
+
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .projectPage__main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}

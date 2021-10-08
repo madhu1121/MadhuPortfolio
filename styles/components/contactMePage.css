@@ -1,0 +1,62 @@
+.contactMePage {
+  background-image: linear-gradient(to bottom right, #0beedb, #0f635e);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.contactMePage h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+.contactMePage h4 {
+  font-weight: bold;
+  font-size: medium;
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.contactMePage__class {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contactMePage__class__contactForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+.contactMePage__class__contactForm label {
+  color: white;
+  font-weight: bold;
+}
+.contactMePage__class__contactForm button {
+  font-weight: bold;
+  color: #054d47;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm input {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm textarea {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.contactMePage__class__contactForm__submit {
+  font-weight: bold;
+  color: #054d47;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
