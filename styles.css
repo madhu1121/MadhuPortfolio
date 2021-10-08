@@ -281,4 +281,9 @@ nav .fa {
   margin-top: 30px;
   margin-bottom: 10px;
   font-style: italic;
+  color: black;
+}
+.footer a {
+  font-size: smaller;
+  color: black;
 }
